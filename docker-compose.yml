@@ -1,0 +1,31 @@
+version: '3'
+
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: ./compose_front/Dockerfile
+    image: frontend_api    
+    ports:
+      - "3000:3000"
+    networks:
+      pokemon:
+        ipv4_address: 50.10.10.10  
+
+  api:
+    build:
+      context: .
+      dockerfile: ./compose_api/Dockerfile
+    image: backend_api
+    ports:
+      - "8000:8000"
+    networks:
+      pokemon:
+        ipv4_address: 50.10.10.11
+
+networks:
+  pokemon:
+    ipam:
+      config:
+        - subnet: 50.10.10.0/24
+          gateway: 50.10.10.1
