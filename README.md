@@ -5,14 +5,14 @@ La presente application consta de dos partes:
 
 ![alt](./images/front.png)
 
-El front utiliza la plantilla  [startup]([https://](https://startup.nextjstemplates.com/))
+El front utiliza la plantilla  [startup](https://startup.nextjstemplates.com/)
 
 ## Backend: API construida usando Django Rest Framework 
 ![alt](./images/back.png)
 
 ## Pasos para desplegar la Aplicación
 
-1. Tener instalado docker y docker-compose. Seguir los pasos de instalación de la [página de docker]([https://](https://docs.docker.com/engine/install/))
+1. Tener instalado docker y docker-compose. Seguir los pasos de instalación de la página de [docker](https://docs.docker.com/engine/install/)
 2. Clonar el repositorio
    ```
    git clone https://github.com/juliosarango/pokemon_app.git
